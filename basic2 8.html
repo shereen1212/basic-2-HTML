@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Survey</title>
+
+    <style>
+       
+
+        
+
+        .section {
+            border: 1px solid #000; 
+            padding: 15px;
+            margin-bottom: 20px; 
+        }
+
+       
+    </style>
+</head>
+
+<body>
+    <h1>Simple Survey</h1>
+
+    <!-- Part 1: Basic Information -->
+    <div class="section">
+        <h2>Part 1: Basic Information</h2>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name"> 
+        <br>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email">
+    </div>
+
+    <!-- Part 2: Preferences -->
+    <div class="section">
+        <h2>Part 2: Preferences</h2>
+         <label for="hobby">What is your favorite hobby?</label>
+        <input type="text" name="hobby" id="hobby" placeholder="E.g., Reading, Sports">
+        <br>
+        <label>Do you like surveys?</label>
+        <br>
+        <input type="radio" name="like" id="like_yes" value="yes"> Yes
+<br>
+
+                 <input type="radio" name="like" id="like_no" value="no"> No
+        
+<br>
+<br>
+
+        <label>Which topics are you interested in? (Check all that apply):</label>
+         <br>
+
+           <input type="checkbox" name="topics" id="topic_tech" value="Technology"> Technology
+    <br>
+               <input type="checkbox" name="topics" id="topic_sports" value="Sports"> Sports
+               <br>
+     <input type="checkbox" name="topics" id="topic_music" value="Music"> Music
+     <br>
+        <input type="checkbox" name="topics" id="topic_travel" value="Travel"> Travel
+    </div>
+
+    <!-- Part 3: Comments -->
+    <div class="section">
+        <h2>Part 3: Comments</h2>
+        <label for="comments">Any comments or suggestions:</label>
+        <br>
+        <textarea name="comments" id="comments" rows="4" placeholder=></textarea> 
+    </div>
+
+    <!-- Buttons -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+</body>
+
+</html>
